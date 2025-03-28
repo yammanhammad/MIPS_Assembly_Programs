@@ -1,5 +1,20 @@
 # MIPS Assembly Programs Collection
 
+## Table of Contents
+1. [Overview](#overview)
+2. [Key Features](#-key-features)
+3. [Repository Structure](#-repository-structure)
+4. [Program Descriptions](#-program-descriptions)
+5. [Sample Outputs](#-sample-outputs)
+6. [Learning Path](#-learning-path)
+7. [Technical Skills Demonstrated](#-technical-skills-demonstrated)
+8. [Usage Instructions](#-usage-instructions)
+9. [Why This Project Matters](#-why-this-project-matters)
+10. [Performance Considerations](#-performance-considerations)
+11. [Author](#-author)
+12. [Contributing](#-contributing)
+13. [License](#-license)
+
 ## Overview
 
 This repository contains a comprehensive collection of MIPS assembly language programs developed to demonstrate proficiency in low-level programming, computer architecture concepts, and algorithm implementation. The programs range from basic arithmetic operations to more complex applications like grade calculation and graphical pattern generation.
@@ -80,6 +95,130 @@ MIPS_Assembly_Programs/
 - Generates and displays Fibonacci sequences of user-specified length
 - Implements efficient algorithm for sequence generation
 - Handles special cases for small sequence lengths
+
+## 🖥️ Sample Outputs
+
+### Arithmetic Operations
+When running the basic calculator (`arithematic_ops.asm`), you'll see:
+- Prompts for two numbers
+- Calculated result with appropriate formatting
+- Error message for division by zero when applicable
+
+```
+----- Arithmetic Calculator -----
+
+Please Enter First Number: 2
+
+Please Enter Second Number: 6
+
+Addition: 8
+Subtraction: -4
+Multiplication: 12
+Division: 0
+
+Do you want to continue? (1 for yes, 0 for no): 0
+
+-- program is finished running --
+```
+
+### Grade Calculator
+The grade calculator (`grade_calculator.asm`) produces:
+- Summary of entered scores
+- Calculated average for each subject
+- Letter grade conversion
+- Overall CGPA calculation
+
+```
+===== Student Grade Calculator =====
+
+Please enter the midterm marks out of 40:
+Subject #1 marks: 37
+Subject #2 marks: 38
+Subject #3 marks: 33
+Subject #4 marks: 39
+Subject #5 marks: 40
+
+Please enter the final marks out of 60:
+Subject #1 marks: 55
+Subject #2 marks: 59
+Subject #3 marks: 57
+Subject #4 marks: 58
+Subject #5 marks: 60
+
+===== Results =====
+Total marks: 476
+CGPA: 4.0
+Grade: A
+Excellent
+
+Do you want to calculate another grade? (1 for Yes, 0 for No): 0
+
+-- program is finished running --
+```
+
+### Diamond Pattern
+The diamond pattern generator (`diamond_pattern.asm`) creates customizable ASCII art:
+- User-defined diamond size
+- Precisely centered pattern
+- Clean, symmetrical output
+
+```
+Enter diamond size (even number between 2-20, 0 to exit): 20
+          *
+         ***
+        *****
+       *******
+      *********
+     ***********
+    *************
+   ***************
+  *****************
+ *******************
+*********************
+ *******************
+  *****************
+   ***************
+    *************
+     ***********
+      *********
+       *******
+        *****
+         ***
+          *
+
+Enter diamond size (even number between 2-20, 0 to exit): 0
+
+-- program is finished running --
+```
+
+### Fibonacci Sequence
+The Fibonacci program (`fibonacci.asm`) displays:
+- Sequence up to user-specified length
+- Properly formatted number series
+- Special handling for first terms
+
+```
+====== FIBONACCI SEQUENCE ======
+
+Enter 0 or a negative number to exit the program.
+
+Please enter the value of n (how many Fibonacci numbers to display): 14
+
+Fibonacci Sequence (first 14 numbers):
+
+0	1	1	2	3	5	8	13	21	34	55	89	144	233
+
+```
+
+## 🎓 Learning Path
+
+For those new to MIPS assembly, consider following this progression:
+
+1. Start with [`arithematic_ops.asm`](calculators/arithematic_ops.asm) to understand basic operations
+2. Move to [`average.asm`](math/average.asm) to learn array manipulation
+3. Try [`diamond_pattern.asm`](graphics/diamond_pattern.asm) for loop structures
+4. Progress to more complex programs like [`grade_calculator.asm`](education/grade_calculator.asm)
+
 ## 💻 Technical Skills Demonstrated
 
 - **Low-level programming** concepts and practices
@@ -134,6 +273,37 @@ These programs were designed with efficiency in mind, demonstrating:
 ## 👨‍💻 Author
 
 Developed by a passionate software engineer with interests in low-level programming, computer architecture, and efficient algorithm implementation.
+
+## 🤝 Contributing
+
+Contributions to this MIPS Assembly collection are welcome! Here's how you can contribute:
+
+### Getting Started
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Make your changes
+
+### Coding Standards
+- Use clear, descriptive labels for all procedures
+- Include comprehensive comments explaining register usage
+- Follow the existing formatting style (indentation, spacing)
+- Document all procedures with input/output specifications
+
+### Documentation
+- Update the README.md with details of your program
+- Add sample outputs where applicable
+- Explain the purpose and functionality of your code
+
+### Submitting Changes
+1. Commit your changes (`git commit -m 'Add feature: description'`)
+2. Push to your branch (`git push origin feature/your-feature`)
+3. Open a Pull Request with detailed description
+
+### Types of Contributions Welcome
+- New MIPS assembly programs
+- Optimizations to existing programs
+- Documentation improvements
+- Bug fixes and error handling enhancements
 
 ## 📝 License
 
